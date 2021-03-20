@@ -1,0 +1,30 @@
+#app{
+    background-color:rgba(0,0,0,0.1);
+    width:100%;
+    height:100%;
+}
+#app table{
+    margin-top:10vmin;
+}
+#app table tr td{
+    text-align:left;
+}
+#app .button{
+    font-size:12px;
+    width:80px;
+    margin-left:65px;
+    padding:3vmin 1vmin;
+    float:left;
+}
+#app table tr td #choose{
+    background:url('../../images/folder.svg') center center no-repeat;
+    background-size:90% 80%;
+    background-color:rgba(0,0,0,0.2);
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius:2px;
+    padding:13px;
+    cursor:pointer;
+}
+#app table tr td #choose:hover{
+    border:1px solid rgba(0,0,0,0.4);
+}

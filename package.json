@@ -1,0 +1,38 @@
+{
+	"name": "trinitytools",
+	"version": "1.0.1",
+	"description": "Enciende uno o mas servidores en segundo plano.",
+	"main": "./main.js",
+	"scripts": {
+		"start": "electron .",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder"
+	},
+	"author": "Damian Bajofer",
+	"license": "MIT",
+	"build": {
+		"productName": "TrinityTools Background Server",
+		"appId": "damian.d.bajofer",
+		"asar": true,
+		"win": {
+			"icon": "build/icon.png"
+		},
+		"portable": {
+			"artifactName": "TrinityTools Background Server.exe"
+		},
+		"nsis": {
+			"oneClick": false,
+			"perMachine": true,
+			"allowToChangeInstallationDirectory": true,
+			"uninstallDisplayName": "uninstall",
+			"deleteAppDataOnUninstall": true,
+			"createDesktopShortcut": true,
+			"createStartMenuShortcut": true,
+			"allowElevation": true
+		}
+	},
+	"dependencies": {
+		"electron-reload": "^1.5.0",
+		"jquery": "^3.5.1"
+	}
+}
