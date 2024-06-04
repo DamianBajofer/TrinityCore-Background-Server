@@ -90,7 +90,7 @@ const servers = {
 		this.list.forEach((value, index) => {
 			this.list[index].exec = {auth: null, world: null};
 		});
-		fs.writeFileSync(`${saveDir}/servers.json`, JSON.stringify(this.list));
+		fs.writeFileSync(`${app.SERVERS_DIR}`, JSON.stringify(this.list));
 		app.main.notify({
 			icon: `${app.getAppPath()}/icon.png`,
 			title: app.lang.TitleSavedServers,

@@ -1,5 +1,5 @@
 {
-	"name": "trinitytools",
+	"name": "trinity_bgserver",
 	"version": "1.0.1",
 	"description": "Enciende uno o mas servidores en segundo plano.",
 	"main": "./main.js",
@@ -12,7 +12,7 @@
 	"license": "MIT",
 	"build": {
 		"productName": "TrinityTools Background Server",
-		"appId": "damian.d.bajofer",
+		"appId": "trinity.background.server",
 		"asar": true,
 		"win": {
 			"icon": "build/icon.png"
@@ -24,7 +24,7 @@
 			"oneClick": false,
 			"perMachine": true,
 			"allowToChangeInstallationDirectory": true,
-			"uninstallDisplayName": "uninstall",
+			"uninstallDisplayName": "Trinity BGServer ${version}",
 			"deleteAppDataOnUninstall": true,
 			"createDesktopShortcut": true,
 			"createStartMenuShortcut": true,

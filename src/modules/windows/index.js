@@ -48,8 +48,8 @@ exports.MainWindow = () => {
 	}
 
 	this.window.once("ready-to-show", () => {
-		if(fs.existsSync(`${app.getPath("userData")}/servers.json`)){
-			const saveServers = JSON.parse( fs.readFileSync(`${app.getPath("userData")}/servers.json`).toString() );
+		if(fs.existsSync(`${app.SERVERS_DIR}`)){
+			const saveServers = JSON.parse( fs.readFileSync(`${app.SERVERS_DIR}`).toString() );
 			const response = dialog.showMessageBoxSync({
 				icon: `${app.getAppPath()}/icon.png`,
 				title: app.lang.TitleDetectedServers,
